@@ -1,0 +1,3 @@
+customer_id,account_id,name,type,subtype,bal_available,bal_current,bal_limit,iso_currency
+cu_00001,acc_c7c57e9122edfe7c0cf3,Adv Plus Checking,depository,checking,114.83,114.83,,USD
+cu_00001,acc_21059410dbe4dc27501a,Freedom Card,credit,credit card,1475.15,4124.85,5600,USD

@@ -1,0 +1,5827 @@
+{
+  "customer_id": "cu_00001",
+  "item": {
+    "item_id": "item_3244b917238cd21f5f52",
+    "institution_id": "ins_synth_uofu",
+    "institution_name": "First Ute Bank"
+  },
+  "identity": {
+    "names": [
+      "Hayden Anderson"
+    ],
+    "emails": [
+      "hayden.anderson@example.com"
+    ]
+  },
+  "accounts": [
+    {
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "balances": {
+        "available": 114.83,
+        "current": 114.83,
+        "iso_currency_code": "USD",
+        "limit": null
+      },
+      "mask": "4410",
+      "name": "Adv Plus Checking",
+      "official_name": "Advantage Plus Checking",
+      "subtype": "checking",
+      "type": "depository"
+    },
+    {
+      "account_id": "acc_21059410dbe4dc27501a",
+      "balances": {
+        "available": 1475.15,
+        "current": 4124.85,
+        "iso_currency_code": "USD",
+        "limit": 5600
+      },
+      "mask": "0083",
+      "name": "Freedom Card",
+      "official_name": "Freedom Rewards Card",
+      "subtype": "credit card",
+      "type": "credit"
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_2b2df38b1fab1343f6f2",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1384.56,
+      "iso_currency_code": "USD",
+      "date": "2025-08-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_96aa40fa9a57190171f3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 95.71,
+      "iso_currency_code": "USD",
+      "date": "2025-08-01",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_0e0a8260bd886c144f20",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 21.28,
+      "iso_currency_code": "USD",
+      "date": "2025-08-01",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_475af65b1a29ecc804d4",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 46.73,
+      "iso_currency_code": "USD",
+      "date": "2025-08-01",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_f6a16bfb8548dacd44af",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 10.46,
+      "iso_currency_code": "USD",
+      "date": "2025-08-01",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_f1c7d22f7fce0162544f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 57.76,
+      "iso_currency_code": "USD",
+      "date": "2025-08-02",
+      "name": "SMITHS FOOD #44",
+      "merchant_name": "Smith's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_35f53ef8a8c07824b7d7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 78.09,
+      "iso_currency_code": "USD",
+      "date": "2025-08-02",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_f6990611734afb581758",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2025-08-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_be37c4a8bae79cc39187",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 59.01,
+      "iso_currency_code": "USD",
+      "date": "2025-08-03",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_f2040811bec0fad0e422",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 21.08,
+      "iso_currency_code": "USD",
+      "date": "2025-08-05",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_c4005a3f50241aafdff3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 26.67,
+      "iso_currency_code": "USD",
+      "date": "2025-08-05",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_c8000984eebdaa1f6520",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 45.61,
+      "iso_currency_code": "USD",
+      "date": "2025-08-06",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_7d88e3cd893948dcb42b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 57.63,
+      "iso_currency_code": "USD",
+      "date": "2025-08-07",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_888814feb40cb2b3f6a6",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 211.46,
+      "iso_currency_code": "USD",
+      "date": "2025-08-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_6188ffcbc58fc47fe30c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 35.96,
+      "iso_currency_code": "USD",
+      "date": "2025-08-09",
+      "name": "SMITHS FOOD #44",
+      "merchant_name": "Smith's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_34be0e305185dd8ad353",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 32.27,
+      "iso_currency_code": "USD",
+      "date": "2025-08-11",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_5e9fd6073655b078a76f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 128.85,
+      "iso_currency_code": "USD",
+      "date": "2025-08-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_3102a658a8b1c2d80ed3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 49.18,
+      "iso_currency_code": "USD",
+      "date": "2025-08-12",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_fd27f35c094a46ef0e51",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 56.71,
+      "iso_currency_code": "USD",
+      "date": "2025-08-13",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_c3bfdf99001ba610187e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1335.15,
+      "iso_currency_code": "USD",
+      "date": "2025-08-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_327539e1ce94e36bf57d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 22.9,
+      "iso_currency_code": "USD",
+      "date": "2025-08-15",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_5fabaa68eabd722aa964",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 20.8,
+      "iso_currency_code": "USD",
+      "date": "2025-08-16",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_aa08036a8058ff2bee27",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 581.1,
+      "iso_currency_code": "USD",
+      "date": "2025-08-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_7201d947c553b2c5bfe0",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.03,
+      "iso_currency_code": "USD",
+      "date": "2025-08-17",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_105f84d540081c8e28fb",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 581.1,
+      "iso_currency_code": "USD",
+      "date": "2025-08-18",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_e9e24e8fca614ca98214",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 50.34,
+      "iso_currency_code": "USD",
+      "date": "2025-08-19",
+      "name": "HOMEDEPOT.COM",
+      "merchant_name": "The Home Depot",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_bdd2bce4e6dd06a08737",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 30.5,
+      "iso_currency_code": "USD",
+      "date": "2025-08-19",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_e724b30ff9704bc931c1",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 38.5,
+      "iso_currency_code": "USD",
+      "date": "2025-08-23",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_497ea3d30d906d2ec118",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.77,
+      "iso_currency_code": "USD",
+      "date": "2025-08-25",
+      "name": "AMZN MKTP US*2K3LP09Q1",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_a4dfcb3ab64a9b9ce3a3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2025-08-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_24a355ecc6a9394fb7b9",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2025-08-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_e590c87e2a28fc0c615e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2025-08-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_50773b273ea92f08d3c4",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 31.62,
+      "iso_currency_code": "USD",
+      "date": "2025-08-26",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_91394501fc5c14759352",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 10.31,
+      "iso_currency_code": "USD",
+      "date": "2025-08-26",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_7619040aec7c3ba09df1",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 20.2,
+      "iso_currency_code": "USD",
+      "date": "2025-08-26",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_bfee74f3d34a67fa73d6",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 95.11,
+      "iso_currency_code": "USD",
+      "date": "2025-08-28",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_614970a4fc75e8197ca8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1499.96,
+      "iso_currency_code": "USD",
+      "date": "2025-09-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_788b221a8a7cf23eeee7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 30.42,
+      "iso_currency_code": "USD",
+      "date": "2025-09-01",
+      "name": "OLD NAVY US 5341",
+      "merchant_name": "Old Navy",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_f8c46dfea4d21fd1dc59",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.07,
+      "iso_currency_code": "USD",
+      "date": "2025-09-02",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_edb3871d0ef5bd76feb6",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 176.0,
+      "iso_currency_code": "USD",
+      "date": "2025-09-02",
+      "name": "TARGET 0002132 SLC",
+      "merchant_name": "Target",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_e0a4c9451628151d9b6e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2025-09-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_70008a26009fa05f4e6a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 62.5,
+      "iso_currency_code": "USD",
+      "date": "2025-09-03",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_257b2c8d09f8c9cbb428",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 44.84,
+      "iso_currency_code": "USD",
+      "date": "2025-09-03",
+      "name": "HOMEDEPOT.COM",
+      "merchant_name": "The Home Depot",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_e814aae6326d6119ff84",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 27.09,
+      "iso_currency_code": "USD",
+      "date": "2025-09-03",
+      "name": "AMZN MKTP US*2K3LP09Q1",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_409265dddfc8fc45ec0d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 48.66,
+      "iso_currency_code": "USD",
+      "date": "2025-09-07",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_1867edeb3ac5e24c9547",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 126.06,
+      "iso_currency_code": "USD",
+      "date": "2025-09-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_957253776ef706a791a5",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 73.06,
+      "iso_currency_code": "USD",
+      "date": "2025-09-08",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_d31e8fe1109a6d4c4c4e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 8.44,
+      "iso_currency_code": "USD",
+      "date": "2025-09-10",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_ccb8111c9ac99f3ffcc4",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 12.44,
+      "iso_currency_code": "USD",
+      "date": "2025-09-10",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_db29200230d2c2784829",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 52.07,
+      "iso_currency_code": "USD",
+      "date": "2025-09-11",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_a71b67f37b3d0c20d723",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 38.67,
+      "iso_currency_code": "USD",
+      "date": "2025-09-11",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_e1a593dfdad4ae551f1f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 9.21,
+      "iso_currency_code": "USD",
+      "date": "2025-09-11",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_ac18805add59e34ccb42",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 58.21,
+      "iso_currency_code": "USD",
+      "date": "2025-09-11",
+      "name": "OLD NAVY US 5341",
+      "merchant_name": "Old Navy",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_0f7e1d739f38faf26c47",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 76.55,
+      "iso_currency_code": "USD",
+      "date": "2025-09-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_193a33b6e258a4584cb6",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1542.63,
+      "iso_currency_code": "USD",
+      "date": "2025-09-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_2c980789398ce413e5cb",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 14.47,
+      "iso_currency_code": "USD",
+      "date": "2025-09-16",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_a7027254b4c238b7aa59",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 632.48,
+      "iso_currency_code": "USD",
+      "date": "2025-09-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_7694361ea5aa8270d422",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 23.45,
+      "iso_currency_code": "USD",
+      "date": "2025-09-18",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_d8abeb9114b511ec2b81",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 58.2,
+      "iso_currency_code": "USD",
+      "date": "2025-09-19",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_06a8800ba4b9e543ebf0",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 44.91,
+      "iso_currency_code": "USD",
+      "date": "2025-09-19",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_f8de7a0e31e86b16c0d5",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 26.84,
+      "iso_currency_code": "USD",
+      "date": "2025-09-19",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_13cd007d9aca9152dc90",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 39.16,
+      "iso_currency_code": "USD",
+      "date": "2025-09-20",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_79eb64483f251e9cd6aa",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 53.89,
+      "iso_currency_code": "USD",
+      "date": "2025-09-20",
+      "name": "AMAZON.COM*M23H88",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_1ea5dedb12f5cb4e5e24",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 47.96,
+      "iso_currency_code": "USD",
+      "date": "2025-09-21",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_044e21521caa5ecef66f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 31.49,
+      "iso_currency_code": "USD",
+      "date": "2025-09-22",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_2866c928695bad8e1f2b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 42.42,
+      "iso_currency_code": "USD",
+      "date": "2025-09-23",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_088b847f600a80cc7402",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 12.12,
+      "iso_currency_code": "USD",
+      "date": "2025-09-25",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_6434152370362e7ac3f0",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2025-09-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_674984b15815ffe7e5ea",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2025-09-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_846ac5056918881c5162",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2025-09-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_70c14faf51fc465642aa",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 867.25,
+      "iso_currency_code": "USD",
+      "date": "2025-09-26",
+      "name": "U OF U HEALTH BILLPAY",
+      "merchant_name": "University of Utah Health",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "MEDICAL",
+        "detailed": "MEDICAL_OTHER_MEDICAL"
+      }
+    },
+    {
+      "transaction_id": "txn_24f6cb678dc2e79de221",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2025-09-26",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_3e14728b3a80de1bc438",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -299.78,
+      "iso_currency_code": "USD",
+      "date": "2025-09-26",
+      "name": "CASH DEPOSIT BRANCH 0114",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSFER_IN",
+        "detailed": "TRANSFER_IN_DEPOSIT"
+      }
+    },
+    {
+      "transaction_id": "txn_5aeb8a7e7ebc9fe90a69",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 78.84,
+      "iso_currency_code": "USD",
+      "date": "2025-09-27",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_8a913e48ccb356dd0fa6",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2025-09-27",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_3b77c864649ddd5c901c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1393.92,
+      "iso_currency_code": "USD",
+      "date": "2025-10-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_095cea943df5274954b8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.44,
+      "iso_currency_code": "USD",
+      "date": "2025-10-02",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_2224d5e6172d1cff9524",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2025-10-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_74166a6b8a49a20caf7d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.44,
+      "iso_currency_code": "USD",
+      "date": "2025-10-03",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_5ea7016e58abfa173c3c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 40.65,
+      "iso_currency_code": "USD",
+      "date": "2025-10-06",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_9531f9efa912a5318222",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 99.99,
+      "iso_currency_code": "USD",
+      "date": "2025-10-07",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_aed0d8de72c59b51d2ad",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 242.65,
+      "iso_currency_code": "USD",
+      "date": "2025-10-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_6ab93e4fec364bd2cf52",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 22.24,
+      "iso_currency_code": "USD",
+      "date": "2025-10-08",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_a6adbf223a78302df9ce",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 42.84,
+      "iso_currency_code": "USD",
+      "date": "2025-10-08",
+      "name": "AMZN MKTP US*2K3LP09Q1",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_badace643af0678f61f8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2025-10-08",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_780ff53a5d07735b62eb",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -430.74,
+      "iso_currency_code": "USD",
+      "date": "2025-10-08",
+      "name": "CASH DEPOSIT BRANCH 0114",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSFER_IN",
+        "detailed": "TRANSFER_IN_DEPOSIT"
+      }
+    },
+    {
+      "transaction_id": "txn_8bbe61d2c6e3a0517e1f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 67.62,
+      "iso_currency_code": "USD",
+      "date": "2025-10-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_85671d1ade010ef58c9f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 20.89,
+      "iso_currency_code": "USD",
+      "date": "2025-10-14",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_e18078c381e8ddcd20a2",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1411.62,
+      "iso_currency_code": "USD",
+      "date": "2025-10-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_d89faebc2507ac170bd7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 41.03,
+      "iso_currency_code": "USD",
+      "date": "2025-10-16",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_ebde9e29b9e48ee8a27d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 39.15,
+      "iso_currency_code": "USD",
+      "date": "2025-10-16",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_61d75ce2ca94114d6de1",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 689.26,
+      "iso_currency_code": "USD",
+      "date": "2025-10-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_a8e41ae66720f0b8f94d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 26.69,
+      "iso_currency_code": "USD",
+      "date": "2025-10-17",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_4539fd4582051e0a9d1d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 78.17,
+      "iso_currency_code": "USD",
+      "date": "2025-10-19",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_618f001240b3475f1df5",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 33.73,
+      "iso_currency_code": "USD",
+      "date": "2025-10-19",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_8f1ef289060596afca69",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 195.21,
+      "iso_currency_code": "USD",
+      "date": "2025-10-20",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_12b553bd4d9d0baf50b6",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 39.64,
+      "iso_currency_code": "USD",
+      "date": "2025-10-20",
+      "name": "AMAZON.COM*M23H88",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_51e3026c7d8ed51ddfc7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 54.16,
+      "iso_currency_code": "USD",
+      "date": "2025-10-20",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_e5fb22e971e28056d68f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 101.29,
+      "iso_currency_code": "USD",
+      "date": "2025-10-21",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_bad08cac2dd8d6282f95",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 12.45,
+      "iso_currency_code": "USD",
+      "date": "2025-10-21",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_0ab196793a1386d0468f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 53.1,
+      "iso_currency_code": "USD",
+      "date": "2025-10-21",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_0e0b1e72585d9df592f2",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 41.96,
+      "iso_currency_code": "USD",
+      "date": "2025-10-22",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_df5601e5e884e0b1d643",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 88.15,
+      "iso_currency_code": "USD",
+      "date": "2025-10-24",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_79e24c28f62bc92ff5ca",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 22.21,
+      "iso_currency_code": "USD",
+      "date": "2025-10-24",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_b6f1be8fa76c11328eb4",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2025-10-24",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_6cdc0f13119320558acc",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2025-10-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_7a470463743b6074511b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2025-10-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_91293ef1c49d09cf9c44",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2025-10-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_08bd4a734e2aa084ce91",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 49.66,
+      "iso_currency_code": "USD",
+      "date": "2025-10-30",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_d0e6b7826e641376bffd",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1640.32,
+      "iso_currency_code": "USD",
+      "date": "2025-11-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_0478f8a0ae284fc59c48",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 39.07,
+      "iso_currency_code": "USD",
+      "date": "2025-11-02",
+      "name": "AMAZON.COM*M23H88",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_1295d916c0f9e8dfce13",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2025-11-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_61679cfacdcf52ea44e4",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 24.63,
+      "iso_currency_code": "USD",
+      "date": "2025-11-03",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_5558ea0a22ce218ae139",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 98.31,
+      "iso_currency_code": "USD",
+      "date": "2025-11-03",
+      "name": "AMAZON.COM*M23H88",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_10cbd78ba1770e76c532",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 23.38,
+      "iso_currency_code": "USD",
+      "date": "2025-11-04",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_0ddb79c5307af314f724",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 42.06,
+      "iso_currency_code": "USD",
+      "date": "2025-11-06",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_ac719c79bf805287f82d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 48.4,
+      "iso_currency_code": "USD",
+      "date": "2025-11-07",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_b5862441be0fc971fc25",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 219.88,
+      "iso_currency_code": "USD",
+      "date": "2025-11-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_eea502a3e10154a0b387",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2025-11-08",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_3f123f0a5b77a0e6cd86",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 25.74,
+      "iso_currency_code": "USD",
+      "date": "2025-11-10",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_d4e62becf04fc108cdc8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 134.47,
+      "iso_currency_code": "USD",
+      "date": "2025-11-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_02558319a9c2ef25f6f2",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2025-11-12",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_3fefa9d45f75134988f0",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -439.39,
+      "iso_currency_code": "USD",
+      "date": "2025-11-12",
+      "name": "CASH DEPOSIT BRANCH 0114",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSFER_IN",
+        "detailed": "TRANSFER_IN_DEPOSIT"
+      }
+    },
+    {
+      "transaction_id": "txn_350618eb69e010a5d312",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1621.14,
+      "iso_currency_code": "USD",
+      "date": "2025-11-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_c15804645d47f7e24211",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 628.76,
+      "iso_currency_code": "USD",
+      "date": "2025-11-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_a2d1e7c3a4ca3ceb6046",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 42.76,
+      "iso_currency_code": "USD",
+      "date": "2025-11-17",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_868ec0ce8b2bdd0396b3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 40.42,
+      "iso_currency_code": "USD",
+      "date": "2025-11-20",
+      "name": "SMITHS FOOD #44",
+      "merchant_name": "Smith's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_0ba8b56cf9f858769736",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 14.19,
+      "iso_currency_code": "USD",
+      "date": "2025-11-23",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_e42d19d17b156463b600",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 29.37,
+      "iso_currency_code": "USD",
+      "date": "2025-11-24",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_af9994b75926a3781299",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 37.88,
+      "iso_currency_code": "USD",
+      "date": "2025-11-25",
+      "name": "SMITHS FOOD #44",
+      "merchant_name": "Smith's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_8787e654304dda21163c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2025-11-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_175bced77b5f3677cfac",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2025-11-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_2b8951621165a288a87d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2025-11-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_ace897f88ba86532dbc3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 82.57,
+      "iso_currency_code": "USD",
+      "date": "2025-11-27",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_748774e78203f0ddfe0a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 41.56,
+      "iso_currency_code": "USD",
+      "date": "2025-11-28",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_48771ae123b9e10e813d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 87.42,
+      "iso_currency_code": "USD",
+      "date": "2025-11-30",
+      "name": "TARGET 0002132 SLC",
+      "merchant_name": "Target",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_4a62cac0d4a0ef705237",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1474.72,
+      "iso_currency_code": "USD",
+      "date": "2025-12-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_45a2ea23717412e8138b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 49.95,
+      "iso_currency_code": "USD",
+      "date": "2025-12-01",
+      "name": "HOMEDEPOT.COM",
+      "merchant_name": "The Home Depot",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_8e395038e1d19de449df",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2025-12-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_cc3aa32ac8402110ebd7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 70.58,
+      "iso_currency_code": "USD",
+      "date": "2025-12-04",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_7aa51a421749c5719873",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 25.87,
+      "iso_currency_code": "USD",
+      "date": "2025-12-06",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_531a6d306f82f6db68ba",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 71.45,
+      "iso_currency_code": "USD",
+      "date": "2025-12-07",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_f07c183da9a53d29a214",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 131.59,
+      "iso_currency_code": "USD",
+      "date": "2025-12-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_c8b0050d9a581b5ff731",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 101.41,
+      "iso_currency_code": "USD",
+      "date": "2025-12-09",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_536ca888b3fa3f35fee8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 13.4,
+      "iso_currency_code": "USD",
+      "date": "2025-12-10",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_bb8759b280bc98a80c88",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 18.61,
+      "iso_currency_code": "USD",
+      "date": "2025-12-10",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_0c88e416af4aee6ef61e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 33.15,
+      "iso_currency_code": "USD",
+      "date": "2025-12-11",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_1b0b35603d7071825c41",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 108.54,
+      "iso_currency_code": "USD",
+      "date": "2025-12-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_003d24ca9a514ae9d68d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 38.03,
+      "iso_currency_code": "USD",
+      "date": "2025-12-12",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_ebe5316b6d5f571862bf",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1475.44,
+      "iso_currency_code": "USD",
+      "date": "2025-12-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_0c280078c0b5ad38d457",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 69.22,
+      "iso_currency_code": "USD",
+      "date": "2025-12-16",
+      "name": "SMITHS FOOD #44",
+      "merchant_name": "Smith's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_82803013e0c547ec9d37",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 632.29,
+      "iso_currency_code": "USD",
+      "date": "2025-12-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_627921c56155b81b356f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 32.46,
+      "iso_currency_code": "USD",
+      "date": "2025-12-17",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_67d545074b68ce699dd7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 90.81,
+      "iso_currency_code": "USD",
+      "date": "2025-12-18",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_9d6df046ab3ee9be0370",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 55.68,
+      "iso_currency_code": "USD",
+      "date": "2025-12-18",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_4b3c6bba9b447cd83eec",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 80.22,
+      "iso_currency_code": "USD",
+      "date": "2025-12-19",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_ab338a2e483557d224b5",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 50.13,
+      "iso_currency_code": "USD",
+      "date": "2025-12-20",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_42b37c657921f52e0945",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 174.65,
+      "iso_currency_code": "USD",
+      "date": "2025-12-20",
+      "name": "AMZN MKTP US*2K3LP09Q1",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_a47de7e0ddad33390408",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 37.66,
+      "iso_currency_code": "USD",
+      "date": "2025-12-20",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_fbf8aafe9dd3e7028e67",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 45.65,
+      "iso_currency_code": "USD",
+      "date": "2025-12-22",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_f2bd6ee7869f231be378",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 28.53,
+      "iso_currency_code": "USD",
+      "date": "2025-12-24",
+      "name": "AMAZON.COM*M23H88",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_9c91341f27098cb5c21f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 44.09,
+      "iso_currency_code": "USD",
+      "date": "2025-12-25",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_5798fbf10393a7393083",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2025-12-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_3f248ec3a78847b7bc2a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2025-12-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_1ab2fe6b99f35aee423c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2025-12-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_90f41fb5dc05fedff9fe",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 25.88,
+      "iso_currency_code": "USD",
+      "date": "2025-12-28",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_baef9df08ff912d91290",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 37.71,
+      "iso_currency_code": "USD",
+      "date": "2025-12-28",
+      "name": "OLD NAVY US 5341",
+      "merchant_name": "Old Navy",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_626ac69e15c017d0c78b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 131.4,
+      "iso_currency_code": "USD",
+      "date": "2025-12-29",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_a75c9b39130a4bbe097a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 90.98,
+      "iso_currency_code": "USD",
+      "date": "2025-12-29",
+      "name": "SMITHS FOOD #44",
+      "merchant_name": "Smith's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_6d9a5397c8ae2878ef61",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 13.51,
+      "iso_currency_code": "USD",
+      "date": "2025-12-29",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_72a4b0e2a642299bd093",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 14.58,
+      "iso_currency_code": "USD",
+      "date": "2025-12-31",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_d6bfb7c635b7ae5c3af3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1461.88,
+      "iso_currency_code": "USD",
+      "date": "2026-01-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_0196c3fb14436ce6a664",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 25.13,
+      "iso_currency_code": "USD",
+      "date": "2026-01-01",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_3f89d0b72ff4a48fdd02",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.74,
+      "iso_currency_code": "USD",
+      "date": "2026-01-02",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_36ec1f3dfe48b7d269ae",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2026-01-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_09c11d0d5e417aa5c8b8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 102.17,
+      "iso_currency_code": "USD",
+      "date": "2026-01-05",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_fb6e6db217f7046a1c21",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 38.82,
+      "iso_currency_code": "USD",
+      "date": "2026-01-05",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_64c641c8a4fb869324a3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 26.35,
+      "iso_currency_code": "USD",
+      "date": "2026-01-07",
+      "name": "TARGET 0002132 SLC",
+      "merchant_name": "Target",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_73e73ec82eaa242d4f1b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 241.68,
+      "iso_currency_code": "USD",
+      "date": "2026-01-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_7cfc37b1307c312b6186",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 10.21,
+      "iso_currency_code": "USD",
+      "date": "2026-01-08",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_4a77cdac6f8df6957386",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 13.6,
+      "iso_currency_code": "USD",
+      "date": "2026-01-11",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_c5e736c51d24f42219d0",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 111.7,
+      "iso_currency_code": "USD",
+      "date": "2026-01-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_35aa16f773b7f1df47ab",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2026-01-12",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_34c24b1fea567ca46ef0",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 27.0,
+      "iso_currency_code": "USD",
+      "date": "2026-01-14",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_758f84d9c35958c0951f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2026-01-14",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_9ea3250a0b298c65ee91",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1458.92,
+      "iso_currency_code": "USD",
+      "date": "2026-01-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_22d9b6ffd86d923aa856",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 507.1,
+      "iso_currency_code": "USD",
+      "date": "2026-01-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_57eabf8c2223a5d21331",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 28.88,
+      "iso_currency_code": "USD",
+      "date": "2026-01-18",
+      "name": "TARGET 0002132 SLC",
+      "merchant_name": "Target",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_219eee8339eac4e84912",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 134.66,
+      "iso_currency_code": "USD",
+      "date": "2026-01-19",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_8cb1dad040bae66ab99c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 13.45,
+      "iso_currency_code": "USD",
+      "date": "2026-01-19",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_f2a321ba18f69a0dcf9f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 65.39,
+      "iso_currency_code": "USD",
+      "date": "2026-01-20",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_e01d543a247fb19b4526",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 42.09,
+      "iso_currency_code": "USD",
+      "date": "2026-01-21",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_e8c78c551d89b8f4635a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 42.09,
+      "iso_currency_code": "USD",
+      "date": "2026-01-22",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_9951248e0b1cecd0a591",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 31.43,
+      "iso_currency_code": "USD",
+      "date": "2026-01-23",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_2e82b073a12886d12760",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 9.44,
+      "iso_currency_code": "USD",
+      "date": "2026-01-23",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_331ca1bee383b65d9e32",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 67.75,
+      "iso_currency_code": "USD",
+      "date": "2026-01-25",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_188186e5f8c0037d4264",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2026-01-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_fe336ea67480b93e209c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2026-01-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_757849a9f71fb1187a74",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2026-01-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_6bae0d1bdc7e828c035d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 40.03,
+      "iso_currency_code": "USD",
+      "date": "2026-01-26",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_cea8db02725a4830715c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 84.52,
+      "iso_currency_code": "USD",
+      "date": "2026-01-28",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_12c7d64011364c3c9253",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 149.84,
+      "iso_currency_code": "USD",
+      "date": "2026-01-28",
+      "name": "HOMEDEPOT.COM",
+      "merchant_name": "The Home Depot",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_827d3b9f1e232ed09806",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1553.0,
+      "iso_currency_code": "USD",
+      "date": "2026-02-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_2ce113096aa6fd861caf",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2026-02-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_935dc791b6ae01aee515",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 16.23,
+      "iso_currency_code": "USD",
+      "date": "2026-02-03",
+      "name": "HOMEDEPOT.COM",
+      "merchant_name": "The Home Depot",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_8e1e225e5c8bbede3766",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 12.66,
+      "iso_currency_code": "USD",
+      "date": "2026-02-03",
+      "name": "OLD NAVY US 5341",
+      "merchant_name": "Old Navy",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_d40c232e0939c511ff2c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.38,
+      "iso_currency_code": "USD",
+      "date": "2026-02-05",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_aa85d0254f5d031015b9",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 59.87,
+      "iso_currency_code": "USD",
+      "date": "2026-02-06",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_f386055aa1d19b7e4558",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 79.03,
+      "iso_currency_code": "USD",
+      "date": "2026-02-06",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_fa5e9716a2298cb7c7e4",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 35.4,
+      "iso_currency_code": "USD",
+      "date": "2026-02-06",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_4010d2c3e26c7225ceb2",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 31.45,
+      "iso_currency_code": "USD",
+      "date": "2026-02-07",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_b82b6fa92fad74963b2d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 56.66,
+      "iso_currency_code": "USD",
+      "date": "2026-02-07",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_176668b7ed5127c4c26b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 161.16,
+      "iso_currency_code": "USD",
+      "date": "2026-02-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_3c4da5d9c72f03080822",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 106.1,
+      "iso_currency_code": "USD",
+      "date": "2026-02-08",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_cb0b196cbc3d94b62b22",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 35.1,
+      "iso_currency_code": "USD",
+      "date": "2026-02-08",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_01aee71c28d6154f8f19",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2026-02-08",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_f9c27698e2eb34e6d3f2",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 70.02,
+      "iso_currency_code": "USD",
+      "date": "2026-02-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_a28c1fae49a95d7fcc31",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1532.98,
+      "iso_currency_code": "USD",
+      "date": "2026-02-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_a2f90a309699a33f6958",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 38.96,
+      "iso_currency_code": "USD",
+      "date": "2026-02-16",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_8b156fed5c329091addc",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 584.91,
+      "iso_currency_code": "USD",
+      "date": "2026-02-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_511c7ea9399202df0e26",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 22.62,
+      "iso_currency_code": "USD",
+      "date": "2026-02-18",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_c31628633ecfd51bcb7b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 44.61,
+      "iso_currency_code": "USD",
+      "date": "2026-02-18",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_fc7463c2dacd71f1f03f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 36.23,
+      "iso_currency_code": "USD",
+      "date": "2026-02-20",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_2859e1b28dd65fc4c58f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 4.88,
+      "iso_currency_code": "USD",
+      "date": "2026-02-21",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_24c64e9a9ebd3fba65f6",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 32.64,
+      "iso_currency_code": "USD",
+      "date": "2026-02-21",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_9fc2f0333349924ad841",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 31.52,
+      "iso_currency_code": "USD",
+      "date": "2026-02-21",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_f0e6f7033b99a59d7546",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 4.88,
+      "iso_currency_code": "USD",
+      "date": "2026-02-22",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_07d11aa1a36f8cd4ebae",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 12.01,
+      "iso_currency_code": "USD",
+      "date": "2026-02-23",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_7cede821e7483e62f51c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 12.21,
+      "iso_currency_code": "USD",
+      "date": "2026-02-23",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_3aaedee45e687227e7ab",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 46.68,
+      "iso_currency_code": "USD",
+      "date": "2026-02-23",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_4525c3a55565ad8e80d3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 35.48,
+      "iso_currency_code": "USD",
+      "date": "2026-02-24",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_67fa525aac766f917cf3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 32.62,
+      "iso_currency_code": "USD",
+      "date": "2026-02-25",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_f799b60fde99b3ad118a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 42.28,
+      "iso_currency_code": "USD",
+      "date": "2026-02-25",
+      "name": "TARGET 0002132 SLC",
+      "merchant_name": "Target",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_94b2b3134686b75e63ec",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2026-02-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_147dde85f584a2de7b3c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2026-02-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_386e1092132ba9657ec3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2026-02-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_346ebf1888b28afe1580",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 74.19,
+      "iso_currency_code": "USD",
+      "date": "2026-02-26",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_5beea5fe5b2b8ee10337",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.17,
+      "iso_currency_code": "USD",
+      "date": "2026-02-26",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_cddebc41565b01179b48",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 9.71,
+      "iso_currency_code": "USD",
+      "date": "2026-02-26",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_33bb379327e1e3c0a2d7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 51.18,
+      "iso_currency_code": "USD",
+      "date": "2026-02-28",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_3e68429a47777c882c08",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 29.18,
+      "iso_currency_code": "USD",
+      "date": "2026-02-28",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_88592be5aab410f75db2",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1498.74,
+      "iso_currency_code": "USD",
+      "date": "2026-03-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_7f7e343670e546970201",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 48.32,
+      "iso_currency_code": "USD",
+      "date": "2026-03-01",
+      "name": "TARGET 0002132 SLC",
+      "merchant_name": "Target",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_2d07b367a2b06a3cf277",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 144.83,
+      "iso_currency_code": "USD",
+      "date": "2026-03-01",
+      "name": "HOMEDEPOT.COM",
+      "merchant_name": "The Home Depot",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_ad86aa2b463e30224f16",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 84.86,
+      "iso_currency_code": "USD",
+      "date": "2026-03-02",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_a69381bf3414a1ed509a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2026-03-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_08b9ab72fbe9768c6bef",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 33.51,
+      "iso_currency_code": "USD",
+      "date": "2026-03-03",
+      "name": "HOMEDEPOT.COM",
+      "merchant_name": "The Home Depot",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_07d14c7faf5860ebd308",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 32.93,
+      "iso_currency_code": "USD",
+      "date": "2026-03-05",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_984cda53988a6ba10630",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 37.09,
+      "iso_currency_code": "USD",
+      "date": "2026-03-05",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_acbbcd59917ebbbec0a8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 55.89,
+      "iso_currency_code": "USD",
+      "date": "2026-03-07",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_76d4fc4abd7d62f4eb28",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 195.04,
+      "iso_currency_code": "USD",
+      "date": "2026-03-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_b93b9608e29c88a11ed7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2026-03-08",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_5aa2b22b2aa2bca8421a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 81.63,
+      "iso_currency_code": "USD",
+      "date": "2026-03-09",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_0f938c98caf7bd9a63b8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -311.56,
+      "iso_currency_code": "USD",
+      "date": "2026-03-09",
+      "name": "CASH DEPOSIT BRANCH 0114",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSFER_IN",
+        "detailed": "TRANSFER_IN_DEPOSIT"
+      }
+    },
+    {
+      "transaction_id": "txn_e1626a83d5130607bacd",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 12.23,
+      "iso_currency_code": "USD",
+      "date": "2026-03-10",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_c53ff0462cae6d877035",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 114.4,
+      "iso_currency_code": "USD",
+      "date": "2026-03-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_46541561f68662ee449b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2026-03-12",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_baa1ff44b9200239502b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 65.29,
+      "iso_currency_code": "USD",
+      "date": "2026-03-13",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_992d7673e3024a54da28",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2026-03-13",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_7c60d74db749ca4b0945",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1476.15,
+      "iso_currency_code": "USD",
+      "date": "2026-03-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_a686324a57d2adb27bc8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 63.4,
+      "iso_currency_code": "USD",
+      "date": "2026-03-15",
+      "name": "AMAZON.COM*M23H88",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_821e1a70ff1704c5d0a2",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 814.57,
+      "iso_currency_code": "USD",
+      "date": "2026-03-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_d1e8b28c6f4a982e3e3a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 28.29,
+      "iso_currency_code": "USD",
+      "date": "2026-03-21",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_29272718ebd488af6cd8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 113.92,
+      "iso_currency_code": "USD",
+      "date": "2026-03-22",
+      "name": "HOMEDEPOT.COM",
+      "merchant_name": "The Home Depot",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_87ead1137daff442a6ec",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 40.67,
+      "iso_currency_code": "USD",
+      "date": "2026-03-23",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_b24d012bf5cdc6aac1e1",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 44.91,
+      "iso_currency_code": "USD",
+      "date": "2026-03-23",
+      "name": "OLD NAVY US 5341",
+      "merchant_name": "Old Navy",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_cfe91e08790955324a0c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 156.39,
+      "iso_currency_code": "USD",
+      "date": "2026-03-25",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_5ff636b1e958319c17b0",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 35.59,
+      "iso_currency_code": "USD",
+      "date": "2026-03-25",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_0906de716ade03cd674e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2026-03-25",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_59e2d4d685a2a0547730",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2026-03-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_af7a786fb34076c5b4f4",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2026-03-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_02546392e12aff76cb80",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2026-03-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_c587704d1aaac9fc5cf6",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1409.91,
+      "iso_currency_code": "USD",
+      "date": "2026-04-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_8be2e56bdd33bf5842f5",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 76.53,
+      "iso_currency_code": "USD",
+      "date": "2026-04-02",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_432c316e65753bd2e31d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 57.58,
+      "iso_currency_code": "USD",
+      "date": "2026-04-02",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_c56226749c259286a9e8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2026-04-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_91a188ccb14a03314801",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 202.69,
+      "iso_currency_code": "USD",
+      "date": "2026-04-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_253c5a2f0df7f6fb93c8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2026-04-08",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_12df0b79d5c8f213ab37",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 35.82,
+      "iso_currency_code": "USD",
+      "date": "2026-04-09",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_62a66cd0d17abc839e08",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 131.83,
+      "iso_currency_code": "USD",
+      "date": "2026-04-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_078ec694750f7de73d26",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -401.18,
+      "iso_currency_code": "USD",
+      "date": "2026-04-12",
+      "name": "CASH DEPOSIT BRANCH 0114",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSFER_IN",
+        "detailed": "TRANSFER_IN_DEPOSIT"
+      }
+    },
+    {
+      "transaction_id": "txn_69e030f83cb4f97fad36",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1417.46,
+      "iso_currency_code": "USD",
+      "date": "2026-04-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_3d5c0d00a09243472b02",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 42.74,
+      "iso_currency_code": "USD",
+      "date": "2026-04-16",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_79675d51d4744af8a153",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 31.85,
+      "iso_currency_code": "USD",
+      "date": "2026-04-16",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_789de657e7274bcec85c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 705.14,
+      "iso_currency_code": "USD",
+      "date": "2026-04-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_b83aa5b607b357834cc3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 23.76,
+      "iso_currency_code": "USD",
+      "date": "2026-04-17",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_c183621dbda0ae9b5732",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 35.56,
+      "iso_currency_code": "USD",
+      "date": "2026-04-18",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_78fa9a337d40deb0172b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 55.34,
+      "iso_currency_code": "USD",
+      "date": "2026-04-20",
+      "name": "AMZN MKTP US*2K3LP09Q1",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_e2e08adc87fe0e4f7e5e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 23.84,
+      "iso_currency_code": "USD",
+      "date": "2026-04-20",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_a00f0bf27dc404bea798",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 16.95,
+      "iso_currency_code": "USD",
+      "date": "2026-04-23",
+      "name": "AMAZON.COM*M23H88",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_8997f753c3f3aab74d2d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 135.63,
+      "iso_currency_code": "USD",
+      "date": "2026-04-24",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_ffd1392b341f04ebb165",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 40.78,
+      "iso_currency_code": "USD",
+      "date": "2026-04-24",
+      "name": "HOMEDEPOT.COM",
+      "merchant_name": "The Home Depot",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_53b6e41556ee64415685",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2026-04-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_0e90908b86a0cd235fa2",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2026-04-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_2707768019ca59c22c65",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2026-04-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_e84aa5c0da92fb6fae10",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 8.22,
+      "iso_currency_code": "USD",
+      "date": "2026-04-27",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_2ff9b72f692b5b190744",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 21.5,
+      "iso_currency_code": "USD",
+      "date": "2026-04-29",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_ced4fa3a54cd648d87e4",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 103.45,
+      "iso_currency_code": "USD",
+      "date": "2026-04-29",
+      "name": "AMAZON.COM*M23H88",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_a8e33519e64dc0ad6134",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1449.45,
+      "iso_currency_code": "USD",
+      "date": "2026-05-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_2ca7e55430e79483dea3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 20.51,
+      "iso_currency_code": "USD",
+      "date": "2026-05-01",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_a46848436b4c9e0ab91f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 29.53,
+      "iso_currency_code": "USD",
+      "date": "2026-05-01",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_7c4b92352c15fc27ec0a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 56.21,
+      "iso_currency_code": "USD",
+      "date": "2026-05-02",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_db9c77fd8e1ed13ab1d2",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2026-05-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_e02f8c8a2bf31575fc3b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 103.76,
+      "iso_currency_code": "USD",
+      "date": "2026-05-07",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_9f6ff189829119b5985c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 30.98,
+      "iso_currency_code": "USD",
+      "date": "2026-05-07",
+      "name": "AMZN MKTP US*2K3LP09Q1",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_8ddea4076a2e4fd3fb0a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 312.42,
+      "iso_currency_code": "USD",
+      "date": "2026-05-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_e66c181a179b12fc292e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 55.17,
+      "iso_currency_code": "USD",
+      "date": "2026-05-08",
+      "name": "AMAZON.COM*M23H88",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_37d96da19d77f437e197",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2026-05-08",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_5a688e23a3154430a7e3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 113.47,
+      "iso_currency_code": "USD",
+      "date": "2026-05-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_c87c113aa8488c7c242d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1496.75,
+      "iso_currency_code": "USD",
+      "date": "2026-05-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_70418fef7d3c9c5237ea",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 40.19,
+      "iso_currency_code": "USD",
+      "date": "2026-05-16",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_dfcc0d09afc502fde620",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 724.23,
+      "iso_currency_code": "USD",
+      "date": "2026-05-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_fb955fd7969853af9af6",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 25.48,
+      "iso_currency_code": "USD",
+      "date": "2026-05-17",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_8b6669656b678d88b4db",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 61.84,
+      "iso_currency_code": "USD",
+      "date": "2026-05-18",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_dc120c06a304589df4dc",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 7.37,
+      "iso_currency_code": "USD",
+      "date": "2026-05-18",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_acb4d85fab8354ebfb6d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 18.07,
+      "iso_currency_code": "USD",
+      "date": "2026-05-18",
+      "name": "STARBUCKS 800 S MAIN",
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_39871c934896256d6d96",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 31.81,
+      "iso_currency_code": "USD",
+      "date": "2026-05-24",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_94c32a2d17eedd975182",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2026-05-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_419ee1ebf035fa620b6d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2026-05-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_8a41e3c61c9fa69d3ba8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2026-05-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_7c89fb06b6ae2cd5a5b5",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 43.53,
+      "iso_currency_code": "USD",
+      "date": "2026-05-31",
+      "name": "TRADER JOE S #612",
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_4bc8a369656895c10f87",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 12.67,
+      "iso_currency_code": "USD",
+      "date": "2026-05-31",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_161a259cbbbeec67dc8a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 166.29,
+      "iso_currency_code": "USD",
+      "date": "2026-05-31",
+      "name": "OLD NAVY US 5341",
+      "merchant_name": "Old Navy",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_89aa590899d0ba82955c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1502.0,
+      "iso_currency_code": "USD",
+      "date": "2026-06-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_fd2085cc23434a72d7ea",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 32.62,
+      "iso_currency_code": "USD",
+      "date": "2026-06-02",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_db604f3790439bdc98da",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2026-06-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_19843b654a3d13890b80",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 19.92,
+      "iso_currency_code": "USD",
+      "date": "2026-06-05",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_45513e63c95b32523110",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 32.95,
+      "iso_currency_code": "USD",
+      "date": "2026-06-06",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_7b840ce44826b7650eb3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 275.32,
+      "iso_currency_code": "USD",
+      "date": "2026-06-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_2e0ffce501b49c7ca74f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 48.21,
+      "iso_currency_code": "USD",
+      "date": "2026-06-08",
+      "name": "OLD NAVY US 5341",
+      "merchant_name": "Old Navy",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_c5324ab835d345a1457d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 35.39,
+      "iso_currency_code": "USD",
+      "date": "2026-06-10",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_cb8f9e5cb9d702ef15eb",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 74.45,
+      "iso_currency_code": "USD",
+      "date": "2026-06-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_8ae345b5f4fd1cc77dda",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.0,
+      "iso_currency_code": "USD",
+      "date": "2026-06-12",
+      "name": "OVERDRAFT ITEM FEE",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "BANK_FEES",
+        "detailed": "BANK_FEES_OVERDRAFT_FEES"
+      }
+    },
+    {
+      "transaction_id": "txn_318baa593a4efcf96eb4",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 36.09,
+      "iso_currency_code": "USD",
+      "date": "2026-06-13",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_c7b33c4f6910f0f8069c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1561.63,
+      "iso_currency_code": "USD",
+      "date": "2026-06-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_3a32a929e95ff1035e98",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 588.15,
+      "iso_currency_code": "USD",
+      "date": "2026-06-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_b19c9ef70b2367033337",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 31.11,
+      "iso_currency_code": "USD",
+      "date": "2026-06-17",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_433a7ad2fc391df18426",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 37.18,
+      "iso_currency_code": "USD",
+      "date": "2026-06-17",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_8dd1b79d36e62cbb2210",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 73.4,
+      "iso_currency_code": "USD",
+      "date": "2026-06-18",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_18567955a1bfbf5df9c7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 12.26,
+      "iso_currency_code": "USD",
+      "date": "2026-06-19",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_efd15787280dbc6afae6",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 24.36,
+      "iso_currency_code": "USD",
+      "date": "2026-06-19",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_44abade89875c4ff5c69",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 103.66,
+      "iso_currency_code": "USD",
+      "date": "2026-06-21",
+      "name": "TARGET 0002132 SLC",
+      "merchant_name": "Target",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_adb8c208226f00c689ac",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 48.79,
+      "iso_currency_code": "USD",
+      "date": "2026-06-23",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_b56278071ebe091fbeec",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.7,
+      "iso_currency_code": "USD",
+      "date": "2026-06-24",
+      "name": "HOMEDEPOT.COM",
+      "merchant_name": "The Home Depot",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_b61cc9495d162f3eeef1",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 20.56,
+      "iso_currency_code": "USD",
+      "date": "2026-06-25",
+      "name": "EVEN STEVENS SANDW",
+      "merchant_name": "Even Stevens",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_5210dd7b79089e4a1db9",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2026-06-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_7cee3b0d9720b76bd54e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2026-06-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_a5b526e8f79034034b6e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2026-06-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_954ca7eb5786517af01c",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 46.33,
+      "iso_currency_code": "USD",
+      "date": "2026-06-26",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_7c04a9e89eb6fd3a946e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 48.45,
+      "iso_currency_code": "USD",
+      "date": "2026-06-27",
+      "name": "SMITHS FOOD #44",
+      "merchant_name": "Smith's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_d9b2c18ab63c114ef647",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 49.85,
+      "iso_currency_code": "USD",
+      "date": "2026-06-27",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_3e86a8dc1f9d0098569a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 13.87,
+      "iso_currency_code": "USD",
+      "date": "2026-06-27",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_796816299f6e4af430a5",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 26.74,
+      "iso_currency_code": "USD",
+      "date": "2026-06-27",
+      "name": "TARGET 0002132 SLC",
+      "merchant_name": "Target",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_120472019c711e45b7b5",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 67.89,
+      "iso_currency_code": "USD",
+      "date": "2026-06-30",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_58c33c36073b1970c496",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1382.34,
+      "iso_currency_code": "USD",
+      "date": "2026-07-01",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_feee5a71f1c6a7880be8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 1100.0,
+      "iso_currency_code": "USD",
+      "date": "2026-07-03",
+      "name": "GREYSTAR PROP MGMT RENT",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_RENT"
+      }
+    },
+    {
+      "transaction_id": "txn_9b143363acce9035fcbd",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 220.28,
+      "iso_currency_code": "USD",
+      "date": "2026-07-08",
+      "name": "ROCKY MTN POWER",
+      "merchant_name": "Rocky Mountain Power",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_GAS_AND_ELECTRICITY"
+      }
+    },
+    {
+      "transaction_id": "txn_bc0e5952dfc2c000886f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 41.15,
+      "iso_currency_code": "USD",
+      "date": "2026-07-11",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_427481b0231292f71330",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 34.24,
+      "iso_currency_code": "USD",
+      "date": "2026-07-11",
+      "name": "MAVERIK #338",
+      "merchant_name": "Maverik",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_786512fa99d46eac0db3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 109.84,
+      "iso_currency_code": "USD",
+      "date": "2026-07-12",
+      "name": "COMCAST 8013539 UT",
+      "merchant_name": "Xfinity",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES",
+        "detailed": "RENT_AND_UTILITIES_INTERNET_AND_CABLE"
+      }
+    },
+    {
+      "transaction_id": "txn_22119813e4b7adb8d06a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 22.32,
+      "iso_currency_code": "USD",
+      "date": "2026-07-12",
+      "name": "COSTCO WHSE #0683",
+      "merchant_name": "Costco",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_228afc0a586e42f9cb7a",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 19.12,
+      "iso_currency_code": "USD",
+      "date": "2026-07-12",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_aaf3744b0ab50b4003f9",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 26.19,
+      "iso_currency_code": "USD",
+      "date": "2026-07-14",
+      "name": "SMITHS FOOD #44",
+      "merchant_name": "Smith's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_6625d3c97acc8570ec1d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": -1413.63,
+      "iso_currency_code": "USD",
+      "date": "2026-07-15",
+      "name": "DIRECT DEP DELTA AIR LINES PAY",
+      "merchant_name": null,
+      "payment_channel": "other",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "INCOME",
+        "detailed": "INCOME_WAGES"
+      }
+    },
+    {
+      "transaction_id": "txn_5d108af99fdd9d00f35e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 13.51,
+      "iso_currency_code": "USD",
+      "date": "2026-07-16",
+      "name": "CAFE RIO #23 SLC",
+      "merchant_name": "Cafe Rio",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_98f4bc107b711249caa7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 610.97,
+      "iso_currency_code": "USD",
+      "date": "2026-07-17",
+      "name": "CHASE CREDIT CRD EPAY",
+      "merchant_name": "Chase",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
+      }
+    },
+    {
+      "transaction_id": "txn_8f279850dbdd93ec0006",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 81.27,
+      "iso_currency_code": "USD",
+      "date": "2026-07-17",
+      "name": "SHELL OIL 57444223",
+      "merchant_name": "Shell",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_8320aaed3a753c2aa3a5",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 117.3,
+      "iso_currency_code": "USD",
+      "date": "2026-07-18",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_0cb6c16d28b2fa3d2c71",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 14.98,
+      "iso_currency_code": "USD",
+      "date": "2026-07-18",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_975b533c2c8afe86ff44",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 52.85,
+      "iso_currency_code": "USD",
+      "date": "2026-07-18",
+      "name": "MCDONALD'S F5821",
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_ebbd927ff946ff86883e",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 9.81,
+      "iso_currency_code": "USD",
+      "date": "2026-07-18",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_9dfd20171286a5d059db",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 12.55,
+      "iso_currency_code": "USD",
+      "date": "2026-07-18",
+      "name": "AMZN MKTP US*2K3LP09Q1",
+      "merchant_name": "Amazon",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_a3094eb89532a08738a8",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 39.02,
+      "iso_currency_code": "USD",
+      "date": "2026-07-19",
+      "name": "WINCO FOODS 117",
+      "merchant_name": "WinCo Foods",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_be5b27154bd8081956b3",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 20.73,
+      "iso_currency_code": "USD",
+      "date": "2026-07-19",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_d1579354c3d740d009ab",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 111.09,
+      "iso_currency_code": "USD",
+      "date": "2026-07-22",
+      "name": "SMITHS FOOD #44",
+      "merchant_name": "Smith's",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_e536286d89f96a5c127b",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 33.09,
+      "iso_currency_code": "USD",
+      "date": "2026-07-22",
+      "name": "CHEVRON 0207754",
+      "merchant_name": "Chevron",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "TRANSPORTATION",
+        "detailed": "TRANSPORTATION_GAS"
+      }
+    },
+    {
+      "transaction_id": "txn_ae264197b586e7c5c21f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 22.99,
+      "iso_currency_code": "USD",
+      "date": "2026-07-24",
+      "name": "HARMONS - CITY CREEK",
+      "merchant_name": "Harmons",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_GROCERIES"
+      }
+    },
+    {
+      "transaction_id": "txn_31cb42a70156f857cc4f",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 58.42,
+      "iso_currency_code": "USD",
+      "date": "2026-07-24",
+      "name": "TARGET 0002132 SLC",
+      "merchant_name": "Target",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_db1dfdff7c60d85f7597",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 14.45,
+      "iso_currency_code": "USD",
+      "date": "2026-07-25",
+      "name": "DOORDASH*ORDER",
+      "merchant_name": "DoorDash",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    },
+    {
+      "transaction_id": "txn_81e8071ad156c76a67f0",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 15.49,
+      "iso_currency_code": "USD",
+      "date": "2026-07-26",
+      "name": "NETFLIX.COM",
+      "merchant_name": "Netflix",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_11dfd8a01c337959c221",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 11.99,
+      "iso_currency_code": "USD",
+      "date": "2026-07-26",
+      "name": "SPOTIFY USA",
+      "merchant_name": "Spotify",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_df26238e2fcf98a52dad",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 17.99,
+      "iso_currency_code": "USD",
+      "date": "2026-07-26",
+      "name": "HULU 877-8244858",
+      "merchant_name": "Hulu",
+      "payment_channel": "online",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "ENTERTAINMENT",
+        "detailed": "ENTERTAINMENT_TV_AND_MOVIES"
+      }
+    },
+    {
+      "transaction_id": "txn_028c429d944d2d31f79d",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 29.53,
+      "iso_currency_code": "USD",
+      "date": "2026-07-27",
+      "name": "WAL-MART #1762",
+      "merchant_name": "Walmart",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE",
+        "detailed": "GENERAL_MERCHANDISE_ONLINE_MARKETPLACES"
+      }
+    },
+    {
+      "transaction_id": "txn_46117dcb732eba988da7",
+      "account_id": "acc_c7c57e9122edfe7c0cf3",
+      "amount": 21.14,
+      "iso_currency_code": "USD",
+      "date": "2026-07-30",
+      "name": "CHICK-FIL-A #02281",
+      "merchant_name": "Chick-fil-A",
+      "payment_channel": "in store",
+      "pending": false,
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK",
+        "detailed": "FOOD_AND_DRINK_RESTAURANT"
+      }
+    }
+  ],
+  "liabilities": {
+    "credit": [
+      {
+        "account_id": "acc_21059410dbe4dc27501a",
+        "last_payment_amount": 515.6,
+        "last_statement_balance": 4124.85,
+        "minimum_payment_amount": 103.12,
+        "is_overdue": false,
+        "aprs": [
+          {
+            "apr_percentage": 24.49,
+            "apr_type": "purchase_apr"
+          }
+        ]
+      }
+    ],
+    "student": [],
+    "mortgage": []
+  }
+}

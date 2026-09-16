@@ -1,0 +1,2 @@
+customer_id,liability_type,account_id,aprs,is_overdue,last_payment_amount,last_statement_balance,minimum_payment_amount
+cu_00001,credit,acc_21059410dbe4dc27501a,"[{""apr_percentage"": 24.49, ""apr_type"": ""purchase_apr""}]",False,515.6,4124.85,103.12
