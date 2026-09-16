@@ -99,16 +99,23 @@ read bundles exactly like the one you persist here, so this is the same code.
 
 ```{r pull-customer}
 sync_transactions <- function(access_token) {
+  #cursor = ", added =[]
   cursor <- ""; added <- list()
+  #While true:
   repeat {
     resp <- plaid_post("/transactions/sync",
                        list(access_token = access_token, cursor = cursor, count = 500))
-    # TODO 1: append this page:   added  <- c(added, resp$added)
-    # TODO 2: advance the cursor: cursor <- resp$next_cursor
-    # TODO 3: stop when done:     if (!isTRUE(resp$has_more)) break
-    stop("Implement TODOs 1-3, then delete this line.")
+    #resp$added -> resp["added"]
+    added  <- c(added, resp$added)
+    #bookmark
+    cursor <- resp$next_cursor
+    
+    #no more transactions to pull
+    if (!isTRUE(resp$has_more)) break
+    
+    #stop("Implement TODOs 1-3, then delete this line.")
   }
-  added <- c(added, resp$added)
+  added #<- c(added, resp$added)
 }
 
 pull_customer <- function(persona) {
