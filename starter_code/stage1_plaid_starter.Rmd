@@ -1,0 +1,179 @@
+---
+title: "FIN 6155 · Digital Credit Build · Stage 1 starter — Plaid Sandbox pipeline"
+author: "WageWave"
+output: html_document
+---
+
+This starter authenticates you and pulls ONE persona end-to-end into a single
+per-customer "bundle". You extend it to four personas and build the raw-data
+inventory (one row per persona x endpoint; columns
+`persona, endpoint, n_records, date_min, date_max, error`). Before writing any
+code, open `example_data/example_bundle.json` and its `_flat.csv` companions —
+one demo customer shown as the JSON bundle (your target shape) and as the
+flattened tables your `flatten_tx()` should produce. What is graded is in the Project Handout (Stage 1): a working
+pipeline, a raw-data inventory, and a short institutional write-up.
+
+# SETUP (once, ~10 min)
+
+1. **Work inside one project folder.** Unzip the starter into a folder you
+   create (e.g. `Documents/digital-credit-build`). Keys, the `raw/` downloads,
+   everything lives in this folder, and all paths are relative to it. Knitting
+   always runs in this file's own folder, so `WORKING_DIR` below can stay
+   `"."`; working line-by-line in the console instead, set it to the folder's
+   full path (or make the folder an RStudio Project: File > New Project >
+   Existing Directory — same effect).
+2. Create a free Plaid account at <https://dashboard.plaid.com/signup>
+   ("Personal Use"). Copy your `client_id` and **Sandbox** secret from
+   Dashboard → Developers → Keys.
+3. Put the keys in a **project-level** `.Renviron` (NOT your home folder, and
+   never hard-coded). Easiest: run `usethis::edit_r_environ("project")`, add the
+   two lines below, then restart R. If your team uses git, add `.Renviron` to your
+   `.gitignore` — keys must never end up in a repo or a submission.
+   ```
+   PLAID_CLIENT_ID=your_client_id
+   PLAID_SECRET=your_sandbox_secret
+   ```
+4. `install.packages(c("httr2", "jsonlite", "tidyverse"))`
+
+Plaid docs worth skimming: Sandbox <https://plaid.com/docs/sandbox/> · test
+credentials & personas <https://plaid.com/docs/sandbox/test-credentials/> ·
+`/transactions/sync` <https://plaid.com/docs/api/products/transactions/>.
+
+```{r setup}
+# ===== SET YOUR WORKING DIRECTORY FIRST (everything saves/loads here) =====
+# Knitting runs in this file's folder, so "." works if everything lives here.
+# Running line-by-line in the console? Put the full path to your project folder,
+# e.g. "C:/Users/you/Documents/digital-credit-build" (forward slashes work on
+# Windows) — or make the folder an RStudio Project and keep ".".
+WORKING_DIR <- ".."
+setwd(WORKING_DIR)                          # keys, raw/ downloads, outputs all live here
+if (file.exists(".Renviron")) readRenviron(".Renviron")  # load PLAID_CLIENT_ID / PLAID_SECRET
+
+library(httr2); library(jsonlite); library(tidyverse)
+
+PLAID_HOST <- "https://sandbox.plaid.com"
+CLIENT_ID  <- Sys.getenv("PLAID_CLIENT_ID")
+SECRET     <- Sys.getenv("PLAID_SECRET")
+stopifnot("Set PLAID_CLIENT_ID in your project .Renviron" = nzchar(CLIENT_ID),
+          "Set PLAID_SECRET in your project .Renviron"    = nzchar(SECRET))
+
+dir.create("raw", showWarnings = FALSE)   # all downloads land here
+
+# Low-level helper: POST one Plaid endpoint, return the parsed JSON body.
+# Read it top to bottom — each line is one step (keep the |> at line end):
+plaid_post <- function(endpoint, body = list()) {
+  request(paste0(PLAID_HOST, endpoint)) |>                               # 1. URL = host + endpoint
+    req_body_json(c(list(client_id = CLIENT_ID, secret = SECRET), body)) |>  # 2. attach auth + this call's fields
+    req_error(body = \(resp) resp_body_string(resp)) |>                  # 3. on HTTP error, surface Plaid's JSON message
+    req_perform() |>                                                     # 4. send the request
+    resp_body_json()                                                     # 5. parse JSON -> R list
+}
+```
+
+## 1. Open one Item per persona (WORKED EXAMPLE)
+
+In production a user logs into their bank through Plaid Link. In Sandbox you
+skip Link: `/sandbox/public_token/create` mints an Item for a fake user at a
+test institution, which you exchange for an `access_token`. We pin `ins_109508`
+("First Platypus Bank") because the credit-profile personas only work at a
+non-OAuth institution — it is required, not a stand-in for a real bank.
+
+```{r open-item}
+open_item <- function(persona, institution = "ins_109508") {
+  pt <- plaid_post("/sandbox/public_token/create", list(
+    institution_id   = institution,
+    initial_products = list("transactions"),
+    options = list(override_username = persona)   # any password works for these personas
+  ))
+  plaid_post("/item/public_token/exchange",
+             list(public_token = pt$public_token))$access_token
+}
+```
+
+## 2. Pull EVERYTHING for one customer, then keep what you need
+
+Rather than scatter calls across your script, pull all products for one Item
+into a single **bundle** — the same shape as the Stage 2 data release
+(`{accounts, transactions, identity, liabilities}`). Your Stage 2 loader will
+read bundles exactly like the one you persist here, so this is the same code.
+
+```{r pull-customer}
+sync_transactions <- function(access_token) {
+  cursor <- ""; added <- list()
+  repeat {
+    resp <- plaid_post("/transactions/sync",
+                       list(access_token = access_token, cursor = cursor, count = 500))
+    # TODO 1: append this page:   added  <- c(added, resp$added)
+    # TODO 2: advance the cursor: cursor <- resp$next_cursor
+    # TODO 3: stop when done:     if (!isTRUE(resp$has_more)) break
+    stop("Implement TODOs 1-3, then delete this line.")
+  }
+  added <- c(added, resp$added)
+}
+
+pull_customer <- function(persona) {
+  tok <- open_item(persona)
+  # /liabilities/get errors for thin-file personas — that is DATA (coverage),
+  # not a bug. Capture the message for your inventory's `error` column; keep going.
+  liab <- tryCatch(plaid_post("/liabilities/get", list(access_token = tok))$liabilities,
+                   error = function(e) {
+                     message("liabilities error for ", persona, ": ", conditionMessage(e),
+                             "   <- record this in your inventory's `error` column")
+                     NULL
+                   })
+  bundle <- list(
+    customer_id  = persona,
+    accounts     = plaid_post("/accounts/get",  list(access_token = tok))$accounts,
+    identity     = plaid_post("/identity/get",  list(access_token = tok))$accounts,
+    transactions = sync_transactions(tok),
+    liabilities  = liab
+  )
+  write_json(bundle, sprintf("raw/%s.json", persona), auto_unbox = TRUE, null = "null")
+  bundle
+}
+
+b <- pull_customer("user_credit_profile_good")
+str(b, max.level = 1)
+```
+
+## 3. Inspect it as a table / CSV (optional — for your eyes)
+
+```{r flatten}
+# Flatten one bundle's transactions to a tidy tibble (and CSV) so you can open
+# them in a spreadsheet. This is also where your Stage 2 feature work begins.
+flatten_tx <- function(b) {
+  map_dfr(b$transactions, \(t) tibble(
+    date          = t$date,
+    amount        = t$amount,                                   # mind the Plaid sign convention!
+    name          = t$name %||% NA_character_,
+    merchant_name = t$merchant_name %||% NA_character_,
+    pfc_primary   = t$personal_finance_category$primary  %||% NA_character_,
+    pfc_detailed  = t$personal_finance_category$detailed %||% NA_character_
+  ))
+}
+tx <- flatten_tx(b)
+write_csv(tx, "raw/user_credit_profile_good_transactions.csv")
+head(tx)
+
+# TODO 4: SIGN CONVENTION — find your largest +/- amounts. Which sign is an
+#   inflow in Plaid's convention? Write one sentence; you need it in Stage 2.
+```
+
+## 4. Scale out — YOUR TURN
+
+```{r extend}
+# TODO 5: run pull_customer() for at least 4 personas, e.g.
+#   user_credit_profile_poor / _good / _excellent, user_transactions_dynamic,
+#   user_small_business. Each writes one raw/<persona>.json bundle.
+# TODO 6: raw-data inventory — one row per (persona x product): n records,
+#   date range, n accounts, and any error encountered (e.g. no liabilities —
+#   the messages printed by pull_customer() go in the `error` column; NA
+#   where an endpoint succeeded).
+```
+
+## 5. Reflection (graded — see Handout, Stage 1)
+
+In <= 1 page, citing your inventory: (i) which endpoints your product consumes
+and why; (ii) what Section 1033 does to your cost of access to this data;
+(iii) why a handful of personas cannot train a credit model — what exactly is
+missing statistically?
