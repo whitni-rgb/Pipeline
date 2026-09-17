@@ -4,47 +4,16 @@ author: "WageWave"
 output: html_document
 ---
 
-This starter authenticates you and pulls ONE persona end-to-end into a single
-per-customer "bundle". You extend it to four personas and build the raw-data
-inventory (one row per persona x endpoint; columns
-`persona, endpoint, n_records, date_min, date_max, error`). Before writing any
-code, open `example_data/example_bundle.json` and its `_flat.csv` companions —
-one demo customer shown as the JSON bundle (your target shape) and as the
-flattened tables your `flatten_tx()` should produce. What is graded is in the Project Handout (Stage 1): a working
-pipeline, a raw-data inventory, and a short institutional write-up.
-
-# SETUP (once, ~10 min)
-
-1. **Work inside one project folder.** Unzip the starter into a folder you
-   create (e.g. `Documents/digital-credit-build`). Keys, the `raw/` downloads,
-   everything lives in this folder, and all paths are relative to it. Knitting
-   always runs in this file's own folder, so `WORKING_DIR` below can stay
-   `"."`; working line-by-line in the console instead, set it to the folder's
-   full path (or make the folder an RStudio Project: File > New Project >
-   Existing Directory — same effect).
-2. Create a free Plaid account at <https://dashboard.plaid.com/signup>
-   ("Personal Use"). Copy your `client_id` and **Sandbox** secret from
-   Dashboard → Developers → Keys.
-3. Put the keys in a **project-level** `.Renviron` (NOT your home folder, and
-   never hard-coded). Easiest: run `usethis::edit_r_environ("project")`, add the
-   two lines below, then restart R. If your team uses git, add `.Renviron` to your
-   `.gitignore` — keys must never end up in a repo or a submission.
-   ```
-   PLAID_CLIENT_ID=your_client_id
-   PLAID_SECRET=your_sandbox_secret
-   ```
-4. `install.packages(c("httr2", "jsonlite", "tidyverse"))`
 
 Plaid docs worth skimming: Sandbox <https://plaid.com/docs/sandbox/> · test
 credentials & personas <https://plaid.com/docs/sandbox/test-credentials/> ·
 `/transactions/sync` <https://plaid.com/docs/api/products/transactions/>.
 
+
+
 ```{r setup}
-# ===== SET YOUR WORKING DIRECTORY FIRST (everything saves/loads here) =====
-# Knitting runs in this file's folder, so "." works if everything lives here.
-# Running line-by-line in the console? Put the full path to your project folder,
-# e.g. "C:/Users/you/Documents/digital-credit-build" (forward slashes work on
-# Windows) — or make the folder an RStudio Project and keep ".".
+
+
 WORKING_DIR <- ".."
 setwd(WORKING_DIR)                          # keys, raw/ downloads, outputs all live here
 if (file.exists(".Renviron")) readRenviron(".Renviron")  # load PLAID_CLIENT_ID / PLAID_SECRET
@@ -78,7 +47,14 @@ test institution, which you exchange for an `access_token`. We pin `ins_109508`
 ("First Platypus Bank") because the credit-profile personas only work at a
 non-OAuth institution — it is required, not a stand-in for a real bank.
 
+
+#the 4 personas
+user_personas <- c(user_credit_profile_poor, user_credit_profile_good, user_credit_profile_excellent, user_credit_profile_fair)
+
+
+#Takes one persona and created an access_token to bank "ins_109508" to initialize transaction product and return access token for persona
 ```{r open-item}
+#persona, bank
 open_item <- function(persona, institution = "ins_109508") {
   pt <- plaid_post("/sandbox/public_token/create", list(
     institution_id   = institution,
@@ -113,19 +89,24 @@ sync_transactions <- function(access_token) {
     #no more transactions to pull
     if (!isTRUE(resp$has_more)) break
     
-    #stop("Implement TODOs 1-3, then delete this line.")
   }
   added #<- c(added, resp$added)
 }
 
 pull_customer <- function(persona) {
+  #access_token = tok
   tok <- open_item(persona)
-  # /liabilities/get errors for thin-file personas — that is DATA (coverage),
-  # not a bug. Capture the message for your inventory's `error` column; keep going.
+
+  liab_error <- NA_character_
+  
+  #pull liabilities if there are any and add ti liab, otherwise save the error message to use in inventory later
+  #call api call and gives a list of access tokens in turn for bundle["liabilities"]
   liab <- tryCatch(plaid_post("/liabilities/get", list(access_token = tok))$liabilities,
                    error = function(e) {
-                     message("liabilities error for ", persona, ": ", conditionMessage(e),
-                             "   <- record this in your inventory's `error` column")
+                     #catches the error if there is one
+                     liab_error <<- conditionMessage(e)
+                     message("liabilities error for ", persona, ": ", conditionMessage(e)
+                             )
                      NULL
                    })
   bundle <- list(
@@ -135,17 +116,30 @@ pull_customer <- function(persona) {
     transactions = sync_transactions(tok),
     liabilities  = liab
   )
+  
+  #creates raw directory
+  dir.create("raw", showWarnings = FALSE, recursive = TRUE)
+  
   write_json(bundle, sprintf("raw/%s.json", persona), auto_unbox = TRUE, null = "null")
   bundle
+  
+  list(
+    bundle = bundle,
+    liab_error = liab_error
+)
 }
 
-b <- pull_customer("user_credit_profile_good")
+b <- pull_customer("user_credit_profile_good") #This takes one persona "user_credit_profile_good" and creates the transactions JSON
 str(b, max.level = 1)
+
+
 ```
 
 ## 3. Inspect it as a table / CSV (optional — for your eyes)
 
 ```{r flatten}
+#STOPPED HERE
+
 # Flatten one bundle's transactions to a tidy tibble (and CSV) so you can open
 # them in a spreadsheet. This is also where your Stage 2 feature work begins.
 flatten_tx <- function(b) {
@@ -158,7 +152,7 @@ flatten_tx <- function(b) {
     pfc_detailed  = t$personal_finance_category$detailed %||% NA_character_
   ))
 }
-tx <- flatten_tx(b)
+tx <- flatten_tx(b$bundle)
 write_csv(tx, "raw/user_credit_profile_good_transactions.csv")
 head(tx)
 
