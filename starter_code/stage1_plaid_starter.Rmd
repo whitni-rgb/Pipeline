@@ -48,9 +48,6 @@ test institution, which you exchange for an `access_token`. We pin `ins_109508`
 non-OAuth institution — it is required, not a stand-in for a real bank.
 
 
-#the 4 personas
-user_personas <- c(user_credit_profile_poor, user_credit_profile_good, user_credit_profile_excellent, user_credit_profile_fair)
-
 
 #Takes one persona and created an access_token to bank "ins_109508" to initialize transaction product and return access token for persona
 ```{r open-item}
@@ -100,11 +97,11 @@ pull_customer <- function(persona) {
   liab_error <- NA_character_
   
   #pull liabilities if there are any and add ti liab, otherwise save the error message to use in inventory later
-  #call api call and gives a list of access tokens in turn for bundle["liabilities"]
+  # Use the access token to request this customer's liability data
   liab <- tryCatch(plaid_post("/liabilities/get", list(access_token = tok))$liabilities,
                    error = function(e) {
                      #catches the error if there is one
-                     liab_error <<- conditionMessage(e)
+                     liab_error <<- "NO_LIABILITY_ACCOUNTS"
                      message("liabilities error for ", persona, ": ", conditionMessage(e)
                              )
                      NULL
@@ -129,8 +126,8 @@ pull_customer <- function(persona) {
 )
 }
 
-b <- pull_customer("user_credit_profile_good") #This takes one persona "user_credit_profile_good" and creates the transactions JSON
-str(b, max.level = 1)
+#b <- pull_customer("user_credit_profile_good") #This takes one persona "user_credit_profile_good" and creates the transactions JSON
+#str(b, max.level = 1)
 
 
 ```
@@ -138,8 +135,6 @@ str(b, max.level = 1)
 ## 3. Inspect it as a table / CSV (optional — for your eyes)
 
 ```{r flatten}
-#STOPPED HERE
-
 # Flatten one bundle's transactions to a tidy tibble (and CSV) so you can open
 # them in a spreadsheet. This is also where your Stage 2 feature work begins.
 flatten_tx <- function(b) {
@@ -152,24 +147,94 @@ flatten_tx <- function(b) {
     pfc_detailed  = t$personal_finance_category$detailed %||% NA_character_
   ))
 }
-tx <- flatten_tx(b$bundle)
-write_csv(tx, "raw/user_credit_profile_good_transactions.csv")
-head(tx)
+#tx <- flatten_tx(b$bundle)
+#head(tx)
 
-# TODO 4: SIGN CONVENTION — find your largest +/- amounts. Which sign is an
-#   inflow in Plaid's convention? Write one sentence; you need it in Stage 2.
+#In Plaid's transaction convention, negative amounts represent inflows (money entering the account), while positive amounts represent outflows (money leaving the account).
+
 ```
 
 ## 4. Scale out — YOUR TURN
 
+
 ```{r extend}
-# TODO 5: run pull_customer() for at least 4 personas, e.g.
-#   user_credit_profile_poor / _good / _excellent, user_transactions_dynamic,
-#   user_small_business. Each writes one raw/<persona>.json bundle.
-# TODO 6: raw-data inventory — one row per (persona x product): n records,
-#   date range, n accounts, and any error encountered (e.g. no liabilities —
-#   the messages printed by pull_customer() go in the `error` column; NA
-#   where an endpoint succeeded).
+#the 4 personas
+user_personas <- c("user_credit_profile_poor", "user_credit_profile_good", "user_credit_profile_excellent", "user_credit_bonus")
+
+pull_multiple_customers <- function(personas) {
+  results <- list()
+  inventory <- tibble()
+  for (persona in personas) {
+    results[[persona]] <- pull_customer(persona)
+    
+    customer <-results[[persona]]$bundle
+    error <- results[[persona]]$liab_error
+    
+    # ACCOUNTS
+    account_row <- tibble(
+      persona = persona,
+      endpoint = "/accounts/get",
+      n_records = length(customer$accounts),
+      date_min = NA_character_,
+      date_max = NA_character_,
+      error = NA_character_
+    )
+    
+    
+    # IDENTITY
+    identity_row <- tibble(
+      persona = persona,
+      endpoint = "/identity/get",
+      n_records = length(customer$identity),
+      date_min = NA_character_,
+      date_max = NA_character_,
+      error = NA_character_
+    )
+    
+    
+    # TRANSACTIONS
+    tx <- flatten_tx(customer)
+    
+    transaction_row <- tibble(
+      persona = persona,
+      endpoint = "/transactions/sync",
+      n_records = nrow(tx),
+      date_min = min(tx$date, na.rm = TRUE),
+      date_max = max(tx$date, na.rm = TRUE),
+      error = NA_character_
+    )
+    
+    
+    # LIABILITIES
+    liability_row <- tibble(
+      persona = persona,
+      endpoint = "/liabilities/get",
+      n_records = length(customer$liabilities),
+      date_min = NA_character_,
+      date_max = NA_character_,
+      error = error
+    )
+    
+    inventory <- bind_rows(
+      inventory,
+      account_row,
+      identity_row,
+      transaction_row,
+      liability_row
+    )
+    
+  }
+  write_csv(inventory, "raw/raw_data_inventory.csv")
+  list(
+    results = results,
+    inventory = inventory
+  )
+  
+}
+
+pull_multiple_customers(user_personas)
+
+
 ```
 
 ## 5. Reflection (graded — see Handout, Stage 1)
