@@ -96,6 +96,8 @@ pull_customer <- function(persona) {
 
   liab_error <- NA_character_
   
+  #.    *ADD similar edge cases for the other endpoints*
+  
   #pull liabilities if there are any and add ti liab, otherwise save the error message to use in inventory later
   # Use the access token to request this customer's liability data
   liab <- tryCatch(plaid_post("/liabilities/get", list(access_token = tok))$liabilities,
@@ -232,7 +234,8 @@ pull_multiple_customers <- function(personas) {
   
 }
 
-pull_multiple_customers(user_personas)
+all_customers <- pull_multiple_customers(user_personas)
+
 
 
 ```
