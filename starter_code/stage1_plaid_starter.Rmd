@@ -53,13 +53,25 @@ non-OAuth institution — it is required, not a stand-in for a real bank.
 ```{r open-item}
 #persona, bank
 open_item <- function(persona, institution = "ins_109508") {
-  pt <- plaid_post("/sandbox/public_token/create", list(
-    institution_id   = institution,
-    initial_products = list("transactions"),
-    options = list(override_username = persona)   # any password works for these personas
-  ))
-  plaid_post("/item/public_token/exchange",
-             list(public_token = pt$public_token))$access_token
+  tryCatch(
+    {
+      pt <- plaid_post("/sandbox/public_token/create", list(
+        institution_id   = institution,
+        initial_products = list("transactions"),
+        options = list(override_username = persona)
+      ))
+
+      plaid_post(
+        "/item/public_token/exchange",
+        list(public_token = pt$public_token)
+      )$access_token
+    },
+
+    error = function(e) {
+      message("Failed to open item for ", persona)
+      return(NULL)
+    }
+  )
 }
 ```
 
@@ -72,29 +84,58 @@ read bundles exactly like the one you persist here, so this is the same code.
 
 ```{r pull-customer}
 sync_transactions <- function(access_token) {
-  #cursor = ", added =[]
-  cursor <- ""; added <- list()
-  #While true:
-  repeat {
-    resp <- plaid_post("/transactions/sync",
-                       list(access_token = access_token, cursor = cursor, count = 500))
-    #resp$added -> resp["added"]
-    added  <- c(added, resp$added)
-    #bookmark
-    cursor <- resp$next_cursor
-    
-    #no more transactions to pull
-    if (!isTRUE(resp$has_more)) break
-    
-  }
-  added #<- c(added, resp$added)
+  
+  cursor <- ""
+  added <- list()
+  transactions_error <- NA_character_
+  
+  tryCatch(
+    {
+      repeat {
+        resp <- plaid_post(
+          "/transactions/sync",
+          list(
+            access_token = access_token,
+            cursor = cursor,
+            count = 500
+          )
+        )
+        
+        added <- c(added, resp$added)
+        cursor <- resp$next_cursor
+        
+        if (!isTRUE(resp$has_more)) break
+      }
+      
+    },
+    error = function(e) {
+      transactions_error <<- "CANNOT_SYNC_TRANSACTIONS"
+      message("sync transactions error: ", conditionMessage(e))
+    }
+  )
+  
+  list(
+    transactions = added,
+    error = transactions_error
+  )
 }
+
 
 pull_customer <- function(persona) {
   #access_token = tok
+  
   tok <- open_item(persona)
+  
+  if (is.null(tok)) {
+    return(list(
+      bundle = NULL,
+      item_error = "ITEM_CREATION_FAILED"
+    ))
+  }
 
   liab_error <- NA_character_
+  accounts_error <- NA_character_
+  identity_error <- NA_character_
   
   #.    *ADD similar edge cases for the other endpoints*
   
@@ -108,11 +149,30 @@ pull_customer <- function(persona) {
                              )
                      NULL
                    })
+  accounts <- tryCatch(plaid_post("/accounts/get", list(access_token = tok))$accounts,
+                   error = function(e) {
+                     #catches the error if there is one
+                     accounts_error <<- "NO_ACCOUNTS"
+                     message("accounts error for ", persona, ": ", conditionMessage(e)
+                             )
+                     NULL
+                   })
+    identity <- tryCatch(plaid_post("/identity/get", list(access_token = tok))$accounts,
+                   error = function(e) {
+                     #catches the error if there is one
+                     identity_error <<- "NO_IDENTITIES"
+                     message("identities error for ", persona, ": ", conditionMessage(e)
+                             )
+                     NULL
+                   })
+    
+  tx_result <- sync_transactions(tok)
+    
   bundle <- list(
     customer_id  = persona,
-    accounts     = plaid_post("/accounts/get",  list(access_token = tok))$accounts,
-    identity     = plaid_post("/identity/get",  list(access_token = tok))$accounts,
-    transactions = sync_transactions(tok),
+    accounts     = accounts,
+    identity     = identity,
+    transactions = tx_result$transactions,
     liabilities  = liab
   )
   
@@ -124,7 +184,10 @@ pull_customer <- function(persona) {
   
   list(
     bundle = bundle,
-    liab_error = liab_error
+    liab_error = liab_error,
+    accounts_error = accounts_error,
+    identity_error = identity_error,
+    transactions_error = tx_result$error
 )
 }
 
@@ -169,8 +232,28 @@ pull_multiple_customers <- function(personas) {
   for (persona in personas) {
     results[[persona]] <- pull_customer(persona)
     
+    if (is.null(results[[persona]]$bundle)) {
+      inventory <- bind_rows(
+        inventory,
+        tibble(
+          persona = persona,
+          endpoint = "item_creation",
+          n_records = 0,
+          date_min = NA_character_,
+          date_max = NA_character_,
+          error = results[[persona]]$item_error
+        )
+      )
+      
+      next
+    }
+    
     customer <-results[[persona]]$bundle
-    error <- results[[persona]]$liab_error
+    liab_error <- results[[persona]]$liab_error
+    accounts_error <- results[[persona]]$accounts_error 
+    identity_error <- results[[persona]]$identity_error
+    transactions_error <- results[[persona]]$transactions_error
+    
     
     # ACCOUNTS
     account_row <- tibble(
@@ -179,7 +262,7 @@ pull_multiple_customers <- function(personas) {
       n_records = length(customer$accounts),
       date_min = NA_character_,
       date_max = NA_character_,
-      error = NA_character_
+      error = accounts_error
     )
     
     
@@ -190,7 +273,7 @@ pull_multiple_customers <- function(personas) {
       n_records = length(customer$identity),
       date_min = NA_character_,
       date_max = NA_character_,
-      error = NA_character_
+      error = identity_error
     )
     
     
@@ -201,9 +284,9 @@ pull_multiple_customers <- function(personas) {
       persona = persona,
       endpoint = "/transactions/sync",
       n_records = nrow(tx),
-      date_min = min(tx$date, na.rm = TRUE),
-      date_max = max(tx$date, na.rm = TRUE),
-      error = NA_character_
+      date_min = if (nrow(tx) > 0) min(tx$date, na.rm = TRUE) else NA_character_,
+      date_max = if (nrow(tx) > 0) max(tx$date, na.rm = TRUE) else NA_character_,
+      error = transactions_error
     )
     
     
@@ -214,7 +297,7 @@ pull_multiple_customers <- function(personas) {
       n_records = length(customer$liabilities),
       date_min = NA_character_,
       date_max = NA_character_,
-      error = error
+      error = liab_error
     )
     
     inventory <- bind_rows(
