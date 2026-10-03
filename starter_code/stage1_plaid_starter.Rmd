@@ -14,7 +14,9 @@ credentials & personas <https://plaid.com/docs/sandbox/test-credentials/> ·
 ```{r setup}
 
 
-WORKING_DIR <- ".."
+WORKING_DIR <- if (file.exists("starter_code/stage1_plaid_starter.Rmd")) "." else ".."
+WORKING_DIR <- normalizePath(WORKING_DIR)
+knitr::opts_knit$set(root.dir = WORKING_DIR)
 setwd(WORKING_DIR)                          # keys, raw/ downloads, outputs all live here
 if (file.exists(".Renviron")) readRenviron(".Renviron")  # load PLAID_CLIENT_ID / PLAID_SECRET
 
@@ -26,7 +28,8 @@ SECRET     <- Sys.getenv("PLAID_SECRET")
 stopifnot("Set PLAID_CLIENT_ID in your project .Renviron" = nzchar(CLIENT_ID),
           "Set PLAID_SECRET in your project .Renviron"    = nzchar(SECRET))
 
-dir.create("raw", showWarnings = FALSE)   # all downloads land here
+RAW_DIR <- file.path("starter_code", "raw")
+dir.create(RAW_DIR, recursive = TRUE, showWarnings = FALSE)
 
 # Low-level helper: POST one Plaid endpoint, return the parsed JSON body.
 # Read it top to bottom — each line is one step (keep the |> at line end):
@@ -37,6 +40,15 @@ plaid_post <- function(endpoint, body = list()) {
     req_perform() |>                                                     # 4. send the request
     resp_body_json()                                                     # 5. parse JSON -> R list
 }
+
+# Preserve the actual API error for the inventory and retry decisions.
+plaid_error_info <- function(e) {
+  body <- tryCatch(resp_body_json(e$resp), error = function(...) list())
+  list(code = body$error_code %||% "REQUEST_FAILED",
+       type = body$error_type %||% NA_character_,
+       message = body$error_message %||% conditionMessage(e))
+}
+
 ```
 
 ## 1. Open one Item per persona (WORKED EXAMPLE)
@@ -83,41 +95,46 @@ into a single **bundle** — the same shape as the Stage 2 data release
 read bundles exactly like the one you persist here, so this is the same code.
 
 ```{r pull-customer}
-sync_transactions <- function(access_token) {
-  
-  cursor <- ""
-  added <- list()
-  transactions_error <- NA_character_
-  
-  tryCatch(
-    {
+sync_transactions <- function(access_token, max_attempts = 8L, retry_delay = 2) {
+  for (attempt in seq_len(max_attempts)) {
+    result <- tryCatch({
+      cursor <- ""
+      added <- modified <- removed <- list()
       repeat {
-        resp <- plaid_post(
-          "/transactions/sync",
-          list(
-            access_token = access_token,
-            cursor = cursor,
-            count = 500
-          )
-        )
-        
+        resp <- plaid_post("/transactions/sync", list(
+          access_token = access_token, cursor = cursor, count = 500
+        ))
         added <- c(added, resp$added)
+        modified <- c(modified, resp$modified)
+        removed <- c(removed, resp$removed)
         cursor <- resp$next_cursor
-        
         if (!isTRUE(resp$has_more)) break
       }
-      
-    },
-    error = function(e) {
-      transactions_error <<- "CANNOT_SYNC_TRANSACTIONS"
-      message("sync transactions error: ", conditionMessage(e))
+      # Pagination can finish before a new Item's historical pull is ready.
+      if (!nzchar(cursor) ||
+          !identical(resp$transactions_update_status, "HISTORICAL_UPDATE_COMPLETE")) {
+        list(transactions = NULL, error = "TRANSACTIONS_NOT_READY")
+      } else {
+        transactions <- list()
+        for (tx in c(added, modified)) transactions[[tx$transaction_id]] <- tx
+        for (tx in removed) transactions[[tx$transaction_id]] <- NULL
+        list(transactions = unname(transactions), error = NA_character_)
+      }
+    }, error = function(e) {
+      info <- plaid_error_info(e)
+      message("sync transactions error: ", info$message)
+      list(transactions = NULL, error = info$code,
+           retryable = info$code == "TRANSACTIONS_SYNC_MUTATION_DURING_PAGINATION" ||
+             info$type %in% c("RATE_LIMIT_EXCEEDED", "API_ERROR") ||
+             inherits(e, "httr2_failure"))
+    })
+    if (is.na(result$error) || attempt == max_attempts ||
+        !(isTRUE(result$retryable) || result$error == "TRANSACTIONS_NOT_READY")) {
+      return(result[c("transactions", "error")])
     }
-  )
-  
-  list(
-    transactions = added,
-    error = transactions_error
-  )
+    # Restart the entire initial pull from "", discarding all partial pages.
+    Sys.sleep(min(retry_delay * 2^(attempt - 1L), 30))
+  }
 }
 
 
@@ -144,7 +161,7 @@ pull_customer <- function(persona) {
   liab <- tryCatch(plaid_post("/liabilities/get", list(access_token = tok))$liabilities,
                    error = function(e) {
                      #catches the error if there is one
-                     liab_error <<- "NO_LIABILITY_ACCOUNTS"
+                     liab_error <<- plaid_error_info(e)$code
                      message("liabilities error for ", persona, ": ", conditionMessage(e)
                              )
                      NULL
@@ -152,7 +169,7 @@ pull_customer <- function(persona) {
   accounts <- tryCatch(plaid_post("/accounts/get", list(access_token = tok))$accounts,
                    error = function(e) {
                      #catches the error if there is one
-                     accounts_error <<- "NO_ACCOUNTS"
+                     accounts_error <<- plaid_error_info(e)$code
                      message("accounts error for ", persona, ": ", conditionMessage(e)
                              )
                      NULL
@@ -160,7 +177,7 @@ pull_customer <- function(persona) {
     identity <- tryCatch(plaid_post("/identity/get", list(access_token = tok))$accounts,
                    error = function(e) {
                      #catches the error if there is one
-                     identity_error <<- "NO_IDENTITIES"
+                     identity_error <<- plaid_error_info(e)$code
                      message("identities error for ", persona, ": ", conditionMessage(e)
                              )
                      NULL
@@ -177,9 +194,9 @@ pull_customer <- function(persona) {
   )
   
   #creates raw directory
-  dir.create("raw", showWarnings = FALSE, recursive = TRUE)
+  dir.create(RAW_DIR, showWarnings = FALSE, recursive = TRUE)
   
-  write_json(bundle, sprintf("raw/%s.json", persona), auto_unbox = TRUE, null = "null")
+  write_json(bundle, file.path(RAW_DIR, paste0(persona, ".json")), auto_unbox = TRUE, null = "null")
   bundle
   
   list(
@@ -237,11 +254,11 @@ pull_multiple_customers <- function(personas) {
         inventory,
         tibble(
           persona = persona,
-          endpoint = "item_creation",
+          endpoint = c("/accounts/get", "/identity/get", "/transactions/sync", "/liabilities/get"),
           n_records = 0,
           date_min = NA_character_,
           date_max = NA_character_,
-          error = results[[persona]]$item_error
+          error = "ITEM_CREATION_FAILED"
         )
       )
       
@@ -279,13 +296,14 @@ pull_multiple_customers <- function(personas) {
     
     # TRANSACTIONS
     tx <- flatten_tx(customer)
+    dates <- if ("date" %in% names(tx)) tx$date[!is.na(tx$date)] else character()
     
     transaction_row <- tibble(
       persona = persona,
       endpoint = "/transactions/sync",
       n_records = nrow(tx),
-      date_min = if (nrow(tx) > 0) min(tx$date, na.rm = TRUE) else NA_character_,
-      date_max = if (nrow(tx) > 0) max(tx$date, na.rm = TRUE) else NA_character_,
+      date_min = if (length(dates) > 0) min(dates) else NA_character_,
+      date_max = if (length(dates) > 0) max(dates) else NA_character_,
       error = transactions_error
     )
     
@@ -294,7 +312,7 @@ pull_multiple_customers <- function(personas) {
     liability_row <- tibble(
       persona = persona,
       endpoint = "/liabilities/get",
-      n_records = length(customer$liabilities),
+      n_records = sum(vapply(customer$liabilities[c("credit", "student", "mortgage")], length, integer(1))),
       date_min = NA_character_,
       date_max = NA_character_,
       error = liab_error
@@ -309,7 +327,7 @@ pull_multiple_customers <- function(personas) {
     )
     
   }
-  write_csv(inventory, "raw/raw_data_inventory.csv")
+  write_csv(inventory, file.path(RAW_DIR, "raw_data_inventory.csv"))
   list(
     results = results,
     inventory = inventory
