@@ -14,9 +14,7 @@ credentials & personas <https://plaid.com/docs/sandbox/test-credentials/> ·
 ```{r setup}
 
 
-WORKING_DIR <- if (file.exists("starter_code/stage1_plaid_starter.Rmd")) "." else ".."
-WORKING_DIR <- normalizePath(WORKING_DIR)
-knitr::opts_knit$set(root.dir = WORKING_DIR)
+WORKING_DIR <- ".."
 setwd(WORKING_DIR)                          # keys, raw/ downloads, outputs all live here
 if (file.exists(".Renviron")) readRenviron(".Renviron")  # load PLAID_CLIENT_ID / PLAID_SECRET
 
@@ -28,8 +26,7 @@ SECRET     <- Sys.getenv("PLAID_SECRET")
 stopifnot("Set PLAID_CLIENT_ID in your project .Renviron" = nzchar(CLIENT_ID),
           "Set PLAID_SECRET in your project .Renviron"    = nzchar(SECRET))
 
-RAW_DIR <- file.path("starter_code", "raw")
-dir.create(RAW_DIR, recursive = TRUE, showWarnings = FALSE)
+dir.create("raw", showWarnings = FALSE)   # all downloads land here
 
 # Low-level helper: POST one Plaid endpoint, return the parsed JSON body.
 # Read it top to bottom — each line is one step (keep the |> at line end):
@@ -194,9 +191,9 @@ pull_customer <- function(persona) {
   )
   
   #creates raw directory
-  dir.create(RAW_DIR, showWarnings = FALSE, recursive = TRUE)
+  dir.create("raw", showWarnings = FALSE, recursive = TRUE)
   
-  write_json(bundle, file.path(RAW_DIR, paste0(persona, ".json")), auto_unbox = TRUE, null = "null")
+  write_json(bundle, sprintf("raw/%s.json", persona), auto_unbox = TRUE, null = "null")
   bundle
   
   list(
@@ -327,7 +324,7 @@ pull_multiple_customers <- function(personas) {
     )
     
   }
-  write_csv(inventory, file.path(RAW_DIR, "raw_data_inventory.csv"))
+  write_csv(inventory, "raw/raw_data_inventory.csv")
   list(
     results = results,
     inventory = inventory
